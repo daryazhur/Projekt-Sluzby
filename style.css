@@ -1,0 +1,400 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit;}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #fafafa;
+
+    margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+    font-weight: medium;
+    font-size: 28px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 42px;
+    text-decoration-line: underline;
+    text-decoration-color: #407BFF;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+}
+
+h2 {
+    font-weight: medium;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.bezny-text {
+    font-weight: light;
+    font-size: 16px;
+    color: #8b8b8b;
+    line-height: 1.5;
+    margin: 0px;
+}
+
+.text-ikonka {
+    font-weight: light;
+    font-size: 13px;
+    color: #8b8b8b;
+    line-height: 1.5;
+}
+
+a {
+    font-weight: regular;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    padding-block: 11px;
+    padding-inline: 30px;
+}
+
+.dobrodruzstvi {
+    background-color: #407BFF;
+}
+
+.pohoda {
+    background-color: #8b8b8b;
+}
+
+
+
+/* MOBIL */
+@media (max-width: 640px) {
+    section {
+        display: flex;
+        justify-content: center;
+        padding-block: 30px;
+        overflow: auto;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 460px;
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin-block: 40px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    .bezny-text {
+        text-align: center;
+    }
+
+    /* První část webu */
+    .prvni-cast {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .foto-cestovatel {
+        width: 350px;
+    }
+
+    .travel-right {
+        width: 460px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .travel-left {
+        text-align: center;
+        width: 460px;
+    }
+    
+    .odkazy {
+        margin-top: 30px;
+    }
+    
+    /* Druhá část webu */
+    .druha-cast {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mapa-planovani, .kaktus-exotika, .letadlo-letenky, .palma-destinace, .lehatka, .karavan-cestovani {
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-direction: row;
+        width: 460px;
+        text-align: center;
+    }
+
+    .mapa-planovani, .palma-destinace {
+        margin-top: 28px;
+    }
+
+    .kaktus-exotika, .lehatka {
+        margin-block: 15px;
+    }
+    
+    .ikonka {
+        width: 40px;
+        margin-block: 20px;
+        margin-left: 20px;
+        margin-right: 30px;
+        float: left;
+    }
+    
+    .text-ikonka {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-top: 32px
+    }
+    
+    .sluzby-left {
+        width: 460px;
+        justify-content: center;
+    }
+    
+    /* Třetí část webu */
+    .treti-cast {
+        display: flex;
+        flex-direction: column
+    }
+    
+    .sluzby-right {
+        width: 460px;
+        align-content: center;
+    }
+   
+}
+
+/* TABLET */
+@media (min-width: 640px) {
+    section {
+        display: flex;
+        justify-content: center;
+        padding-block: 40px;
+        overflow: auto;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 730px;
+        margin: 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 42px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    .bezny-text {
+        text-align: center;
+    }
+
+    /* První část webu */
+    .prvni-cast {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .foto-cestovatel {
+        width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .travel-right {
+        width: 550px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .travel-left {
+        text-align: center;
+        width: 550px;
+    }
+    
+    .odkazy {
+        margin-top: 30px;
+    }
+    
+    /* Druhá část webu */
+    .druha-cast {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .sluzby-kancelare {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .mapa-planovani, .kaktus-exotika, .letadlo-letenky, .palma-destinace, .lehatka, .karavan-cestovani {
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    .ikonka {
+        width: 40px;
+        margin-top: 40px;
+    }
+    
+    .text-ikonka {
+        width: 201px;
+        margin-inline: 15px;
+        margin-block: 20px;
+    }
+    
+    .sluzby-left {
+        width: 550px;
+        justify-content: center;
+        margin-left: 89px;
+    }
+    
+    /* Třetí část webu */
+    .treti-cast {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .sluzby-delegatu {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .sluzby-right {
+        width: 550px;
+        justify-content: center;
+        margin-left: 89px;
+    }
+}
+
+
+
+/* POČÍTAČ - hlavní rozložení */
+@media (min-width: 1100px) {
+    section {
+        display: flex;
+        justify-content: center;
+        padding-block: 40px;
+        overflow: auto;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 1040px;
+        margin: 0;
+    }
+    
+    /* První část webu */
+    .prvni-cast {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .travel-left {
+        padding-right: 60px;
+        width: 490px;
+    }
+    
+    .odkazy {
+        margin-top: 30px;
+        gap: 20px;
+    }
+    
+    .travel-right {
+        width: 490px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .foto-cestovatel {
+        width: 425px;
+    }
+    
+    /* Druhá část webu */
+    .druha-cast {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .sluzby-kancelare {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 550px;
+        margin-right: 60px;
+        text-align: center;
+    }
+    
+    .mapa-planovani, .kaktus-exotika, .letadlo-letenky, .palma-destinace, .lehatka, .karavan-cestovani {
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    .ikonka {
+        width: 40px;
+        margin-top: 40px;
+    }
+    
+    .text-ikonka {
+        margin-inline: 15px;
+        margin-bottom: 40px;
+        margin-top: 20px
+    }
+    
+    .sluzby-left {
+        width: 430px;
+        align-content: center;
+    }
+    
+    /* Třetí část webu */
+    .treti-cast {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .sluzby-delegatu {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 550px;
+        padding-left: 60px;
+        text-align: center;
+    }
+    
+    .sluzby-right {
+        width: 430px;
+        align-content: center;
+    }
+}
+
+

@@ -18,10 +18,10 @@ h1 {
     color: #000000;
     line-height: 1.5;
     margin-bottom: 42px;
-    text-decoration-line: underline;
+    /* text-decoration-line: underline;
     text-decoration-color: #407BFF;
     text-decoration-thickness: 2px;
-    text-underline-position: under;
+    text-underline-position: under; */
 }
 
 h2 {
@@ -59,10 +59,12 @@ a {
 
 .dobrodruzstvi {
     background-color: #407BFF;
+    width: 195px;
 }
 
 .pohoda {
     background-color: #8b8b8b;
+    width: 220px;
 }
 
 
@@ -87,6 +89,16 @@ a {
     h1 {
         text-align: center;
         margin-block: 40px;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        margin-top: 10px;
+        background-color: #407BFF;
+        margin-left: 45%;
     }
 
     h2 {
@@ -198,6 +210,16 @@ a {
     h1 {
         text-align: center;
         margin-bottom: 42px;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        margin-top: 10px;
+        background-color: #407BFF;
+        margin-left: 45%;
     }
 
     h2 {
@@ -312,21 +334,42 @@ a {
         max-width: 1040px;
         margin: 0;
     }
+
+    h1 {
+        text-align: left;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        margin-top: 10px;
+        background-color: #407BFF;
+        margin-left: 0;
+    }
+
+    h2 {
+        text-align: left;
+    }
+    .bezny-text {
+        text-align: left;
+    }
     
     /* První část webu */
     .prvni-cast {
         display: flex;
         flex-direction: row;
+        width: 1040px;
     }
     
     .travel-left {
-        padding-right: 60px;
+        margin-right: 60px;
         width: 490px;
     }
     
     .odkazy {
         margin-top: 30px;
-        gap: 20px;
     }
     
     .travel-right {
@@ -355,6 +398,7 @@ a {
     }
     
     .mapa-planovani, .kaktus-exotika, .letadlo-letenky, .palma-destinace, .lehatka, .karavan-cestovani {
+        width: 170px;
         border-radius: 10px;
         background-color: #ffffff;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
@@ -368,12 +412,14 @@ a {
     .text-ikonka {
         margin-inline: 15px;
         margin-bottom: 40px;
-        margin-top: 20px
+        margin-top: 20px;
+        width: 140px;
     }
     
     .sluzby-left {
         width: 430px;
         align-content: center;
+        margin-left: 0;
     }
     
     /* Třetí část webu */
@@ -387,14 +433,14 @@ a {
         flex-direction: row;
         gap: 20px;
         width: 550px;
-        padding-left: 60px;
+        margin-left: 60px;
         text-align: center;
     }
     
     .sluzby-right {
         width: 430px;
         align-content: center;
+        margin-left: 0;
     }
 }
-
 
